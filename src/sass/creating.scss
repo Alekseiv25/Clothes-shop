@@ -1,0 +1,203 @@
+@import "./libs/reset.scss";
+@import "./fonts.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./tailoring-section.scss";
+
+.selected {
+    color: #272525
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.intro {
+    background: linear-gradient(42.14deg, #9796F0 -17.31%, #FBC7D4 106.72%);
+
+
+    .wrapper {
+        display: flex;
+
+
+        .content {
+            max-width: 600px;
+            margin-top: 30px;
+            margin-right: 100px;
+            margin-bottom: 50px;
+
+
+            .nav {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 20px;
+                color: #7981AD;
+
+                .nav-btn {
+                    color: #7981ad;
+                }
+
+                span {
+                    color: #524983;
+                }
+            }
+
+            .title {
+                font-size: 48px;
+                font-weight: 900;
+                line-height: 60px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 20px;
+                color: #272525;
+                text-transform: uppercase;
+            }
+
+            .subtitle {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #454747;
+                margin-bottom: 30px;
+                max-width: 630px;
+            }
+
+            input {
+                height: 60px;
+                width: 245px;
+                border-radius: 60px;
+                background-color: #3C336C;
+                color: #FFF;
+                border: 0px;
+                transition: 0.5s;
+            }
+
+            input:hover,
+            input:active {
+                background-color: #231e3f
+            }
+        }
+
+        @media (max-width: 1090px) {
+            .content {
+                max-width: 520px;
+
+                .title {
+                    font-size: 42px;
+                }
+            }
+        }
+
+        @media (max-width: 880px) {
+            .content {
+                max-width: none;
+                margin-top: 80px;
+
+                .nav {
+                    display: none;
+                }
+
+                .title {
+                    max-width: 420px;
+                }
+
+                .subtitle {
+                    max-width: 400px;
+                }
+
+                input {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .img-container {
+                position: absolute;
+                max-width: 45%;
+                right: 0px;
+                align-self: flex-end;
+            }
+        }
+
+        .img-container {
+            margin-top: 10px;
+            display: flex;
+            align-items: flex-end;
+
+            img {
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .img-container {
+                max-width: 90%;
+                right: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                margin-right: 0px;
+
+                .title {
+                    text-align: center;
+                }
+
+                .subtitle {
+                    max-width: none;
+                    text-align: center;
+                    margin-bottom: 190px;
+                }
+
+                .btn-container {
+                    position: relative;
+                    top: 60px;
+                    margin: 0 auto;
+                    max-width: 250px;
+
+                    input {
+                        z-index: 1000;
+                        position: relative;
+
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 370px) {
+            .content {
+                .title {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+.tailoring {
+    margin-top: -30px;
+}
